@@ -1,5 +1,5 @@
 import React from 'react'
-import ConfigBroker from '../../Settings/ConfigBroker'
+import ConfigBroker from '../ConnSettings/ConfigBroker'
 import DashBase from '../DashBase/DashBase'
 
 const ConfigConn = () => {

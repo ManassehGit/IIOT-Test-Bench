@@ -9,7 +9,7 @@ const Sidebar = () => {
                     <div className="sidebar-brand-icon rotate-n-15"><i className="fas fa-book"></i></div>
                     <div className="sidebar-brand-text mx-3"><span>IIOT Test bench</span></div>
                 </Link>
-                <hr className="sidebar-divider my-0" />
+                <hr className="sidebar-divider my-3" />
                 <ul className="nav navbar-nav text-light" id="accordionSidebar">
                     <li className="nav-item" role="presentation"><Link className="nav-link active" to="/configconn"><i className="fas fa-tachometer-alt"></i><span>Configure Connection</span></Link></li>
                     <li className="nav-item" role="presentation"><Link className="nav-link" to="/configpublim" ><i className="fas fa-user"></i><span>Configure Publisher Limit</span></Link></li>

@@ -5,9 +5,9 @@ const ConfigBroker = () => {
     <div className=''>
         
         <div className='m-4'>
-        <div>
-        <h2 className='my-5'>Configure Connection to Broker</h2>
-        <button type="button" class="btn btn-success">Connect</button>
+        <div className='row my-5'>
+        <h2 className='col'>Configure Connection to Broker</h2>
+        <button type="button" class="btn btn-success col-2">Connected</button>
         </div>
         <form>
           <fieldset className='border p-2 my-2'>

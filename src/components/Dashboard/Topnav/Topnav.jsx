@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-const Topnav = () => {
+const TopNav = () => {
   return (
     <nav className="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
         <div className="container-fluid"><button className="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i className="fas fa-bars"></i></button>
@@ -23,5 +23,5 @@ const Topnav = () => {
   )
 }
 
-export default Topnav
+export default TopNav
 

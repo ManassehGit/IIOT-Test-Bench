@@ -2,7 +2,7 @@ import React from 'react'
 
 const ConfigBroker = () => {
   return (
-    <>
+    <div className='container'>
         <div className='container m-4'>
         <form>
             <div class="form-group row">
@@ -19,7 +19,7 @@ const ConfigBroker = () => {
             </div>
         </form>
         </div>
-    </>
+    </div>
   )
 }
 

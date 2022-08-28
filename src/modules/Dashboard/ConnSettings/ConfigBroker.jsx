@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+import generateID from '../../HelperFunctions/generateClientId'
 
 const ConfigBroker = () => {
+  const [randId, setRandId] = useState("");
+
+  let getID = true;
+
+  const getClientId = ({target}) => {
+    if(target.checked){
+      console.log("hi there")
+    }
+    getID = true;
+    const randomId = generateID();
+    setRandId(randomId);
+    getID = false;
+  }
+
   return (
     <div className=''>
         
@@ -66,14 +81,14 @@ const ConfigBroker = () => {
                 <div className="col-md-8" >
                 <label htmlFor="clientid" className="col col-form-label">Client Id</label>
                 <div className="col">
-                <input type="text" className="form-control" id="clientid" placeholder="Enter Client ID" />
+                <input type="text" className="form-control" id="clientid" defaultValue={getID? randId : ""}/>
                 </div>
                 </div>
                 <div className="col-md-4" >
                 <label htmlFor="randomid" className="col col-form-label">Generate a client ID</label>
                 <div className="col">
                 <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="" id="generateid" />
+                <input className="form-check-input" type="checkbox" value="" id="generateid" onClick={getClientId}/>
                 <label className="form-check-label" htmlFor="generateid">
                   Get an ID
                 </label>

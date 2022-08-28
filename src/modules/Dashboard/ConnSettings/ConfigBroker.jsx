@@ -11,7 +11,7 @@ const ConfigBroker = () => {
         </div>
         <form>
           <fieldset className='border p-2 my-2'>
-            <legend className='col'>Host</legend>
+            <legend className='col'>Connection</legend>
             <div className="form-group row">
                 <div className="col-md-6" >
                 <label htmlFor="host" className="col col-form-label">Host or IP</label>
@@ -23,7 +23,7 @@ const ConfigBroker = () => {
                 <div className="col-md-4" >
                 <label htmlFor="port" className="col col-form-label">Port</label>
                 <div className="col">
-                <input type="number" className="form-control" id="port" placeholder="Port Number" value={"5000"}/>
+                <input type="number" className="form-control" id="port" placeholder="5000" />
                 </div>
                 </div>
 
@@ -34,10 +34,7 @@ const ConfigBroker = () => {
                 </div>
                 </div>
             </div>
-          </fieldset>
-
-          <fieldset className='border p-2 my-2'>
-          <legend className='col'>Protocol</legend>
+          
             <div className="form-group row">
                 <div className="col-md-6" >
                 <label htmlFor="protocol" className="col col-form-label">Protocol</label>
@@ -49,10 +46,7 @@ const ConfigBroker = () => {
                 </div>
                 </div>
             </div>
-          </fieldset>
-
-          <fieldset className='border p-2 my-2'>
-          <legend className='col'>User Authentication</legend>
+          
             <div className="form-group row">
                 <div className="col-md-6" >
                 <label htmlFor="username" className="col col-form-label">Username</label>
@@ -67,10 +61,7 @@ const ConfigBroker = () => {
                 </div>
                 </div>
             </div>
-          </fieldset>
-
-          <fieldset className='border p-2 my-2'>
-          <legend className='col'>Connection Options</legend>
+          
             <div className="form-group row">
                 <div className="col-md-8" >
                 <label htmlFor="clientid" className="col col-form-label">Client Id</label>

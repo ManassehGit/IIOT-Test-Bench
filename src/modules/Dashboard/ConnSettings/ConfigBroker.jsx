@@ -6,8 +6,8 @@ const ConfigBroker = () => {
         
         <div className='m-4'>
         <div className='row my-5'>
-        <h2 className='col'>Configure Connection to Broker</h2>
-        <button type="button" class="btn btn-success col-2">Connected</button>
+        <h2 className='col'>Configure Connection</h2>
+        <button type="button" className="btn btn-success col-md-3 col-lg-2">Connected</button>
         </div>
         <form>
           <fieldset className='border p-2 my-2'>
@@ -39,8 +39,8 @@ const ConfigBroker = () => {
                 <div className="col-md-6" >
                 <label htmlFor="protocol" className="col col-form-label">Protocol</label>
                 <div className="col">
-                  <select class="form-select" aria-label="Select protocol">
-                  <option selected value="tcp">TCP</option>
+                  <select className="form-select" defaultValue={"TCP"} aria-label="Select protocol">
+                  <option value="tcp">TCP</option>
                   <option value="ssl">SSL</option>
                   </select>
                 </div>
@@ -72,9 +72,9 @@ const ConfigBroker = () => {
                 <div className="col-md-4" >
                 <label htmlFor="randomid" className="col col-form-label">Generate a client ID</label>
                 <div className="col">
-                <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="generateid" />
-                <label class="form-check-label" for="generateid">
+                <div className="form-check">
+                <input className="form-check-input" type="checkbox" value="" id="generateid" />
+                <label className="form-check-label" htmlFor="generateid">
                   Get an ID
                 </label>
               </div>

@@ -1,8 +1,14 @@
 import React from 'react'
+import Graphs from '../ConnSettings/Graphs'
+import DashBase from '../DashBase/DashBase'
 
 const Visualize = () => {
   return (
-    <div>Visualize</div>
+    <div>
+        <DashBase>
+            <Graphs />
+        </DashBase>
+    </div>
   )
 }
 

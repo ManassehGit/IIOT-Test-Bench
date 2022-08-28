@@ -7,13 +7,14 @@ const ConfigBroker = () => {
   let getID = true;
 
   const getClientId = ({target}) => {
+    const clientIdField = document.querySelector("#clientid");
     if(target.checked){
-      console.log("hi there")
-    }
-    getID = true;
-    const randomId = generateID();
-    setRandId(randomId);
-    getID = false;
+      getID = true;
+      const randomId = generateID();
+      setRandId(randomId);
+      getID = false;
+      clientIdField.value = randomId;
+    }    
   }
 
   return (
@@ -81,7 +82,7 @@ const ConfigBroker = () => {
                 <div className="col-md-8" >
                 <label htmlFor="clientid" className="col col-form-label">Client Id</label>
                 <div className="col">
-                <input type="text" className="form-control" id="clientid" defaultValue={getID? randId : ""}/>
+                <input type="text" className="form-control" id="clientid" placeholder='Enter Client ID' defaultValue={getID? randId : ""}/>
                 </div>
                 </div>
                 <div className="col-md-4" >

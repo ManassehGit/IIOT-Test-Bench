@@ -1,6 +1,7 @@
 //Function to generate random client Id for users that would select option
 const generateID = () => {
-    let id = "user1234";
+    let arr = ["user1234","coder123","appl123","client123"]
+    let id = arr[Math.floor(Math.random() * arr.length)];
     //using a sample string 
 
 

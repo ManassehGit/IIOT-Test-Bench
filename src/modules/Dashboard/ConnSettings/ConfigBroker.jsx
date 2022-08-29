@@ -10,7 +10,7 @@ const ConfigBroker = () => {
     const clientIdField = document.querySelector("#clientid");
     if(target.checked){
       getID = true;
-      const randomId = generateID();
+      const randomId = generateID(6);
       setRandId(randomId);
       getID = false;
       clientIdField.value = randomId;

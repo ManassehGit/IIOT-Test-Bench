@@ -46,7 +46,7 @@ const ConfigBroker = () => {
                 <div className="col-md-2" >
                 <label htmlFor="timeout" className="col col-form-label">Timeout</label>
                 <div className="col">
-                <input type="number" className="form-control" id="timeout" placeholder="Timeout" />
+                <input type="number" className="form-control" id="timeout" defaultValue={"4000"} />
                 </div>
                 </div>
             </div>
@@ -59,6 +59,13 @@ const ConfigBroker = () => {
                   <option value="tcp">TCP</option>
                   <option value="ssl">SSL</option>
                   </select>
+                </div>
+                </div>
+
+                <div className="col-md-4" >
+                <label htmlFor="reconnect" className="col col-form-label">Reconnect Reriod</label>
+                <div className="col">
+                <input type="number" className="form-control" id="reconnect" defaultValue={"4000"} />
                 </div>
                 </div>
             </div>
